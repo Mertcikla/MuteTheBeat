@@ -1,0 +1,8 @@
+{
+  "revision": "a5212661245a2184370fc3c3dd1f52dc4dffb2a5",
+  "sha256": {
+    "df.js": "db53ee40f42143a0077905f73c6255b272a651f36f451fca6a2bde980c749f71",
+    "df_bg.wasm": "440b5d12b6ea7d95008736f844221d7874ee15de5cb10d3015002470fdba0432",
+    "DeepFilterNet3_onnx.tar.gz": "c94d91f70911001c946e0fabb4aa9adc37045f45a03b56008cb0c8244cb63616"
+  }
+}

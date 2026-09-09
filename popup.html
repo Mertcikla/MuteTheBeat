@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MuteTheBeat</title></head>
+<body>
+  <main>
+    <header><img class="logo" src="/icons/icon-48.png" width="39" height="39" alt=""><div><h1>MuteTheBeat</h1><p class="eyebrow">LESS MUSIC. MORE CONVERSATION.</p></div></header>
+    <section class="session" aria-live="polite"><div class="status-row"><span id="dot" class="dot"></span><strong id="phase">Ready when you are</strong></div><p id="tab">Open a Twitch stream to begin.</p><p id="error" role="alert" hidden></p><button id="toggle" class="primary">Enable speech focus <span aria-hidden="true">↗</span></button></section>
+    <section class="controls" aria-label="Audio settings">
+      <div class="label-row"><label for="reduction">Music reduction</label><output id="reduction-value" for="reduction">50%</output></div>
+      <input id="reduction" type="range" min="0" max="100" step="1" value="50"><div class="range-labels"><span>Gentle</span><span>Stronger</span></div>
+      <div class="label-row volume"><label for="volume">Output volume</label><output id="volume-value" for="volume">100%</output></div>
+      <input id="volume" type="range" min="0" max="150" step="1" value="100">
+      <div class="compare" role="group" aria-label="Compare audio"><button id="original" aria-pressed="false">Original</button><button id="enhanced" aria-pressed="true">Enhanced</button></div>
+      <p id="latency" class="detail">Processing starts only when you enable it.</p>
+    </section>
+     </main><script type="module" src="/src/popup.ts"></script>
+</body></html>
