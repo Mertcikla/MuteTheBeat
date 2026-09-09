@@ -30,7 +30,6 @@ The default pipeline adds 70 ms before browser/device overhead: 30 ms of model d
 
 If the computer cannot sustain processing, the extension stops capture and restores original audio with an error. Close expensive applications and click Enable to retry. Missing model files, blocked audio startup, or a failed worker also restore native playback. Muted or paused Twitch playback remains muted or paused.
 
-See [VALIDATION.md](VALIDATION.md) for measured results and checks that remain unverified.
 
 ## Development
 
