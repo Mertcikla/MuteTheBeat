@@ -6,9 +6,6 @@ let settings: Settings = { ...DEFAULTS }, busy = false, editingUntil = 0;
 const call = (command: Command): Promise<Reply> => chrome.runtime.sendMessage({ target: 'background', command });
 function render() {
   const running = ['active', 'original', 'initializing'].includes(state.phase);
-  el('phase').textContent = { idle: 'Ready when you are', initializing: 'Preparing speech focus…', active: 'Speech focus is on', original: 'Playing original audio', error: 'Speech focus paused' }[state.phase];
-  el('dot').className = `dot ${running ? 'active' : state.phase === 'error' ? 'error' : ''}`;
-  el('tab').textContent = state.title ?? (isTwitch(selected?.url) ? selected?.title ?? 'Twitch' : 'Open a Twitch stream to begin.');
   el('error').textContent = state.error ?? ''; el('error').hidden = !state.error;
   const toggle = el<HTMLButtonElement>('toggle');
   toggle.textContent = running ? 'Disable speech focus' : 'Enable speech focus ↗';

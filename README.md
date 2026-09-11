@@ -4,7 +4,7 @@ A Chrome extension that processes Twitch audio locally with DeepFilterNet3 to re
 
 ## Install
 
-1. Extract `MuteTheBeat-1.0.0.zip` to a permanent folder, or use this project's `dist` folder.
+1. Extract the latest `MuteTheBeat.zip` release to a permanent folder, or use this project's `dist` folder.
 2. Open `chrome://extensions` in Chrome 116 or newer and enable **Developer mode**.
 3. Click **Load unpacked** and select the folder containing `manifest.json`.
 4. Open and play a stream on `https://www.twitch.tv`, then click the MuteTheBeat extension button and **Enable speech focus**.
@@ -54,4 +54,4 @@ pnpm run benchmark
 
 See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for source provenance and licensing.
 
-To package on Windows after building and completing validation, run `scripts/package.ps1` in PowerShell. It copies the documentation and reports into `dist/` and creates `MuteTheBeat-1.0.0.zip`.
+To package on Windows after building and completing validation, run `scripts/package.ps1` in PowerShell. It copies the documentation and reports into `dist/` and creates `submission/MuteTheBeat.zip`.

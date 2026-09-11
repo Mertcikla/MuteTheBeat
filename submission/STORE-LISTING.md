@@ -11,7 +11,7 @@
 
 ## Detailed description — paste into the listing
 
-Less music. More conversation.
+Reduce music volume from stream without affecting speech.
 
 MuteTheBeat enhances speech in a Twitch stream so background music and other background sounds can become quieter while voices remain audible.
 
